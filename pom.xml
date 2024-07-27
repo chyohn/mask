@@ -6,12 +6,16 @@
 
   <groupId>io.github.chyohn.mask</groupId>
   <artifactId>mask-parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-RELEASE</version>
   <packaging>pom</packaging>
   <modules>
     <module>mask</module>
     <module>mask-demo</module>
   </modules>
+
+  <description>
+    Chyohn Mask用于对敏感信息脱敏，比如用户名、银行卡号、身份照、邮箱、手机号等等。具有功能强大，使用方式简单的特点。
+  </description>
 
   <licenses>
     <license>
@@ -27,6 +31,7 @@
     </developer>
   </developers>
 
+  <url>https://github.com/chyohn/mask</url>
   <scm>
     <connection>scm:git:git://github.com/chyohn/mask.git</connection>
     <developerConnection>scm:git:ssh://github.com:chyohn/mask.git</developerConnection>
@@ -141,12 +146,12 @@
       <id>release</id>
       <distributionManagement>
         <snapshotRepository>
-          <id>oss</id>
-          <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+          <id>ossrh</id>
+          <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
         </snapshotRepository>
         <repository>
-          <id>oss</id>
-          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+          <id>ossrh</id>
+          <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
       </distributionManagement>
       <build>
@@ -180,7 +185,8 @@
             <version>0.5.0</version>
             <extensions>true</extensions>
             <configuration>
-              <publishingServerId>oss</publishingServerId>
+              <publishingServerId>ossrh</publishingServerId>
+              <autoPublish>true</autoPublish>
             </configuration>
           </plugin>
           <plugin>
@@ -200,8 +206,8 @@
             <artifactId>nexus-staging-maven-plugin</artifactId>
             <extensions>true</extensions>
             <configuration>
-              <serverId>oss</serverId>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <serverId>ossrh</serverId>
+              <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
               <autoReleaseAfterClose>true</autoReleaseAfterClose>
             </configuration>
           </plugin>

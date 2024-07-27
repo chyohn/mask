@@ -6,12 +6,12 @@
   <parent>
     <groupId>io.github.chyohn.mask</groupId>
     <artifactId>mask-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
   </parent>
 
   <groupId>io.github.chyohn.mask</groupId>
   <artifactId>mask</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-RELEASE</version>
 
 
   <dependencies>
