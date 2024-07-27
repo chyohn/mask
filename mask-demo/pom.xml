@@ -6,7 +6,7 @@
   <parent>
     <groupId>io.github.chyohn.mask</groupId>
     <artifactId>mask-parent</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>mask-demo</artifactId>

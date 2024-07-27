@@ -13,7 +13,7 @@ Chyohn Mask用于对敏感信息脱敏，比如用户名、银行卡号、身份
     <dependency>
         <groupId>io.github.chyohn.mask</groupId>
         <artifactId>mask</artifactId>
-        <version>${mask.version}</version>
+        <version>1.0.0-RELEASE</version>
     </dependency>
 </dependencies>
 ```
